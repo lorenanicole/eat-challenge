@@ -1,9 +1,9 @@
 {
-  "name": "input-manager",
+  "name": "eat-challenge",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git@github.com:schneiderik/input-manager.git"
+    "url": "git@github.com:schneiderik/eat-challenge.git"
   },
   "scripts": {
     "start": "node app.js & npm run watch",
