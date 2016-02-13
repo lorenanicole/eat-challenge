@@ -10,8 +10,8 @@
     "prestart": "npm run build",
     "build:js": "browserify ./assets/js/main.js -t babelify -o ./public/js/main.js -s eatApp",
     "watch:js": "nodemon -e js -w assets/js -x npm run build:js",
-    "build:css": "node-sass ./assets/stylesheets/main.scss ./public/stylesheets/main.scss",
-    "watch:css": "node-sass -w ./assets/stylesheets/main.scss ./public/stylesheets/main.scss",
+    "build:css": "node-sass ./assets/stylesheets/main.scss ./public/stylesheets/main.css",
+    "watch:css": "node-sass -w ./assets/stylesheets/main.scss ./public/stylesheets/main.css",
     "build": "npm run build:js & npm run build:css",
     "watch": "npm run watch:js & npm run watch:css",
     "test": "karma start test/unit/config/karma.js --single-run"
@@ -35,5 +35,8 @@
     "sinon": "1.16.1",
     "sinon-chai": "2.8.0",
     "node-sass": "~3.4.2"
+  },
+  "dependencies": {
+    "express": "~4.13.4"
   }
 }

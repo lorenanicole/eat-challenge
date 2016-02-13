@@ -1,0 +1,16 @@
+$white: #FFF;
+$black: #222;
+$dark-grey: #666;
+$grey: #AAA;
+$light-grey: #CCC;
+
+$header-background-color: $light-grey;
+$footer-background-color: $dark-grey;
+
+$base-line-height: 1.618; // Golden Ratio
+
+@function lh($n) {
+  @return $base-line-height * $n * 1rem;
+}
+
+$footer-height: lh(3);

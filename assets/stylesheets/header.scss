@@ -1,0 +1,10 @@
+.main-header {
+  background-color: $header-background-color;
+  padding: 0 lh(1);
+  position: fixed;
+  width: 100%;
+}
+
+.main-header__logo {
+  padding: lh(1) 0;
+}

@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,49 +21,42 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 img {
   display: block;
-  width: 100%; }
+  width: 100%;
+}
 
 figure {
-  margin: 0; }
-
-.main-header {
-  position: fixed;
-  width: 100%;
-  padding: 0 1rem; }
-
-.main-header__logo {
-  padding: 1rem 0; }
-
-.main-footer {
-  width: 100%;
-  padding: 1rem;
-  background-color: #666; }
-
-body a {
-  text-decoration: none; }
+  margin: 0;
+}

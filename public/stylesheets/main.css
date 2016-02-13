@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,17 +52,29 @@ figure {
   margin: 0; }
 
 .main-header {
+  background-color: #CCC;
+  padding: 0 1.618rem;
   position: fixed;
-  width: 100%;
-  padding: 0 1rem; }
+  width: 100%; }
 
 .main-header__logo {
-  padding: 1rem 0; }
+  padding: 1.618rem 0; }
 
 .main-footer {
   width: 100%;
-  padding: 1rem;
+  height: 4.854rem;
+  padding: 1.618rem;
   background-color: #666; }
 
-body a {
-  text-decoration: none; }
+html, body {
+  height: 100%;
+  line-height: 1.618; }
+
+.main-section {
+  min-height: 100%;
+  margin-bottom: -4.854rem; }
+
+.main-section:after {
+  content: "";
+  display: block;
+  height: 4.854rem; }
