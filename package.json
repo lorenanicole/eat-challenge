@@ -8,8 +8,8 @@
   "scripts": {
     "start": "node app.js & npm run watch",
     "prestart": "npm run build",
-    "build:js": "browserify ./assets/js/main.js -t babelify -o ./public/js/main.js -s eatApp",
-    "watch:js": "nodemon -e js -w assets/js -x npm run build:js",
+    "build:js": "browserify ./assets/js/main.js -t babelify -t browserify-handlebars -o ./public/js/main.js -s EatApp",
+    "watch:js": "nodemon -e js -e handlebars -w assets/js -w assets/templates -x npm run build:js",
     "build:css": "node-sass ./assets/stylesheets/main.scss ./public/stylesheets/main.css",
     "watch:css": "node-sass -w ./assets/stylesheets/main.scss ./public/stylesheets/main.css",
     "build": "npm run build:js & npm run build:css",
@@ -34,7 +34,8 @@
     "phantomjs": "~1.9.7-12",
     "sinon": "1.16.1",
     "sinon-chai": "2.8.0",
-    "node-sass": "~3.4.2"
+    "node-sass": "~3.4.2",
+    "browserify-handlebars": "~1.0.0"
   },
   "dependencies": {
     "express": "~4.13.4"

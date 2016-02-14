@@ -13,4 +13,5 @@ $base-line-height: 1.618; // Golden Ratio
   @return $base-line-height * $n * 1rem;
 }
 
+$header-height: lh(3);
 $footer-height: lh(3);

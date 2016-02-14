@@ -1,8 +1,11 @@
 .main-header {
   background-color: $header-background-color;
   padding: 0 lh(1);
+  height: $header-height;
   position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .main-header__logo {

@@ -54,8 +54,11 @@ figure {
 .main-header {
   background-color: #CCC;
   padding: 0 1.618rem;
+  height: 4.854rem;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  top: 0;
+  left: 0; }
 
 .main-header__logo {
   padding: 1.618rem 0; }
@@ -71,6 +74,7 @@ html, body {
   line-height: 1.618; }
 
 .main-section {
+  padding-top: 4.854rem;
   min-height: 100%;
   margin-bottom: -4.854rem; }
 

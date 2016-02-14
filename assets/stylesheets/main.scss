@@ -9,6 +9,7 @@ html, body {
 }
 
 .main-section {
+  padding-top: $header-height;
   min-height: 100%;
   margin-bottom: -$footer-height;
 }
